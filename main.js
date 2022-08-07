@@ -1,5 +1,10 @@
-let arr = [20, 30, 40, 50, 100]
+let grades = ['A+', 'A', 'FAIL']
+let goodGrades = []
 
-let newArr = arr.filter(element => element < 50)
+for (let i = 0; i < grades.length; ++i) {
+    if (grades[i] !== 'FAIL') {
+        goodGrades.push(grades[i])
+    }
+}
 
-console.log(newArr)
+console.log(goodGrades)
