@@ -1,10 +1,13 @@
-let grades = ['A+', 'A', 'FAIL']
-let goodGrades = []
+let arr = [1, 5, 10, 3]
 
-for (let i = 0; i < grades.length; ++i) {
-    if (grades[i] !== 'FAIL') {
-        goodGrades.push(grades[i])
-    }
+let newArray = arr.map(element => element * 100)
+
+console.log(newArray)
+
+let arrCents = []
+
+for (let i = 0; i < arr.length; ++i) {
+    arrCents.push(arr[i] * 100)
 }
 
-console.log(goodGrades)
+console.log(arrCents)
